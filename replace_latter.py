@@ -38,7 +38,7 @@ def result():
         messagebox.showerror("Error", "Please fillup the field.")
 
 
-lbl1 = Label(root, font=("arial", 15, "bold"), text="Phase : ")
+lbl1 = Label(root, font=("arial", 15, "bold"), text="Message : ")
 phase_entry = Entry(root, font=("arial", 15, "bold"), bd=5)
 lbl1.grid(row=0, column=0)
 phase_entry.grid(row=0, column=1)
@@ -51,5 +51,9 @@ str_ltr.grid(row=1, column=1)
 btn = Button(root, font=("arial", 18, "bold"),
              text="Submit", bd=5, command=result)
 btn.grid(row=2, column=1)
+
+lbl_name = Label(root, font=("arial", 10, "bold"),
+                 text="Prepaid by 'Golam Mostafa Rabbi'")
+lbl_name.grid(row=3, column=0)
 
 mainloop()
