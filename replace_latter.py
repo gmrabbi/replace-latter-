@@ -1,4 +1,4 @@
-user_input = input("Enter your phase : ")
+user_input = input("Enter your phase : ").lower()
 start_latter = (input("Enter the starting latter : ").lower())[0]
 
 alphabet = []
@@ -17,11 +17,13 @@ if len(user_alphabet) < 26:
         user_alphabet += chr(i)
 
 
+latter_num = alphabet.index(user_input[0])
+
 output = ""
 for latter in user_input:
     if latter in alphabet:
         num = alphabet.index(latter)
-        output += (user_alphabet[num])
+        output += (user_alphabet[num - latter_num]).upper()
     else:
         output += latter
 
