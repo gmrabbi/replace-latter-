@@ -1,6 +1,7 @@
 # replace-latter-
 it's usually used to encoding and decoding 
 
+
 alphabet        =    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
                      | | | | | | | | | | | | | | | | | | | | | | | | | |
 user_alphabet   =    M N O P Q R S T U V W X Y Z A B C D E F G H I J K L
