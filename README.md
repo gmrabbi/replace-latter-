@@ -11,6 +11,7 @@ like "apple" => "mbbxq"  😎
 
 then how can you do that..?🤷‍♂️🤷‍
 
+
 suppose someone sent you "mjqqt ijfw mtb fwj dtz?" this message. an anonymous user get your message anyhow . can he/she understand easily that actually what it is?
 is it "hello dear how are you?" ?????😴😴
 
