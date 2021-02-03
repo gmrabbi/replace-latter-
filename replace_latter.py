@@ -1,3 +1,4 @@
+# Now make it with GUI.
 user_input = input("Enter your phase : ").lower()
 start_latter = (input("Enter the starting latter : ").lower())[0]
 
