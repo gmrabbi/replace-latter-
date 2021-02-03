@@ -2,7 +2,7 @@
 it's usually used to encoding and decoding 
 
 
-.  alphabe  	    =    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z                                                                                                
+....__...alphabe  	    =    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z                                                                                                
 user_alphabet    =    M N O P Q R S T U V W X Y Z A B C D E F G H I J K L
  
 suppose you want to change latter "A" to latter "M" and after that the next latter would chage autometically by it's own sequence.
