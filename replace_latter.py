@@ -16,5 +16,13 @@ if len(user_alphabet) < 26:
     for i in range(97, ord(firt_latter)):
         user_alphabet += chr(i)
 
-print(alphabet)
-print(user_alphabet)
+
+output = ""
+for latter in user_input:
+    if latter in alphabet:
+        num = alphabet.index(latter)
+        output += (user_alphabet[num])
+    else:
+        output += latter
+
+print(output)
