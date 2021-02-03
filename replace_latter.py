@@ -6,33 +6,36 @@ root.title("Replace latter")
 
 
 def result():
-    user_input = (phase_entry.get()).lower()
-    start_latter = ((str_ltr.get()).lower())[0]
+    try:
+        user_input = (phase_entry.get()).lower()
+        start_latter = ((str_ltr.get()).lower())[0]
 
-    alphabet = []
-    for i in range(97, 122 + 1):
-        alphabet += chr(i)
+        alphabet = []
+        for i in range(97, 122 + 1):
+            alphabet += chr(i)
 
-    user_alphabet = []
-    for i in range((ord(start_latter)), 122 + 1):
-        user_alphabet += chr(i)
-
-    firt_latter = user_alphabet[0]
-
-    if len(user_alphabet) < 26:
-        for i in range(97, ord(firt_latter)):
+        user_alphabet = []
+        for i in range((ord(start_latter)), 122 + 1):
             user_alphabet += chr(i)
 
-    latter_num = alphabet.index(user_input[0])
+        firt_latter = user_alphabet[0]
 
-    output = ""
-    for latter in user_input:
-        if latter in alphabet:
-            num = alphabet.index(latter)
-            output += (user_alphabet[num - latter_num]).upper()
-        else:
-            output += latter
-    messagebox.showinfo("Result", output)
+        if len(user_alphabet) < 26:
+            for i in range(97, ord(firt_latter)):
+                user_alphabet += chr(i)
+
+        latter_num = alphabet.index(user_input[0])
+
+        output = ""
+        for latter in user_input:
+            if latter in alphabet:
+                num = alphabet.index(latter)
+                output += (user_alphabet[num - latter_num]).upper()
+            else:
+                output += latter
+        messagebox.showinfo("Result", output)
+    except IndexError:
+        messagebox.showerror("Error", "Please fillup the field.")
 
 
 lbl1 = Label(root, font=("arial", 15, "bold"), text="Phase : ")
